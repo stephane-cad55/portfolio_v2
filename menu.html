@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="menu.css">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon.ico">
+
+    <title>Portfolio Stéphane Cadeck</title>
+</head>
+
+<body>
+
+    <div class="container menu">
+
+        <div>
+            <h1><br>Bienvenue<br>sur mon Portfolio</h1>
+        </div>
+
+        <p class="sub-heading"></p>
+
+        <div id="sectiontohide">
+            <nav>
+                <ul class="sub-menu">
+                    <li class="menu-home"><a href="index.html">Revenir à la page d'accueil</a></li>
+                    <li class="menu-realisations"><a href="#about">A propos de moi</a></li>
+                    <li class="menu-projects"><a href="#works">Mes réalisations</a></li>
+                    <li class="menu-about"><a href="#projects">Mes projets</a></li>
+                    <li class="menu-contact"><a href="#contact">Me contacter</a></li>
+                    <li class="menu-gitHub"><a href="https://github.com/stephane-cad55" target="_blank">Mes réalisations
+                            et projets sur mon GitHub</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+    </div>
+
+    <div id="about" class="container me">
+
+        <div>
+            <h2>À propos de moi</h2>
+        </div>
+
+        <p>Je m'appelle Stéphane CADECK.</p>
+        <p>J'ai souhaité me reconvertir professionnellement et me
+            diriger vers le secteur du numérique après avoir effectué de nombreuses recherches sur le
+            metier de
+            développeur informatique.</br>
+            Je souhaite devenir concepteur développeur d'applications car je suis de nature curieuse. La
+            curiosité
+            est primordiale pour un développeur, il doit avoir une culture informatique et web
+            importante, savoir se
+            remettre en question.</br>
+            Ma facilité d'échange est un atout ce qui facilite le travail en équipe, vu que le
+            développeur travaille
+            rarement seul. Cela permet d'amener à bien le projet établi par le supérieur en répondant
+            aux cahier des
+            charges.</br>
+            Je veux me diriger vers ce métier pour répondre aux besoins des clients et en amont me
+            servir de mon
+            esprit analytique pour faire aboutir le projet.
+            Ma rigueur ,mon autonomie, ma gestion du stress me permettent de respecter les délais de
+            travail pour
+            remplir aux mieux les tâches qui me sont confiées.
+            Je sais prendre des initiatives et j'apprécie la pédagogie, ce qui peut m'être utile pour
+            une éventuelle
+            aide technique concernant un logiciel pour un client.</br>
+            J'apprécie plus le front end.</br>
+            Ce métier offre des évolutions de carrière, ce qui me motive également à me diriger dans
+            cette voie.<br>
+            C'est pourquoi, après des recherches pour trouver un centre de formation et après des tests et entretiens,
+            j'ai éffectué une formation de concepteur développeur d'applications au Gréta de Montpellier où
+            l'apprentissage des langages de formations fût diverse.<br>
+            J'ai étudié aussi bien des langages front-end que back-end : HTML, CSS, Bootstrap, JAVASCRIPT, JAVA, PHP,
+            utilisation d'un éditeur de logiciel pour les applications mobiles.<br>
+            J'ai aussi manipulé le langage SQL, appris la conception de diagrammes tels que MCD et MLD.<br>
+            Enfin, je me suis aussi exercé à concevoir des maquettes, des storyboards...etc
+        </p>
+
+        <div class="img">
+            <p>Pour encore mieux me connaître, vous pouvez télécharger mon CV, cliquez &nbsp;<a
+                    href="assets/doc/CV_CADECK_Stephane.pdf" download="CV_Stéphane_Cadeck"> ici</a></p>
+        </div>
+
+    </div>
+
+    <div id="works" class="container real">
+
+        <div>
+            <h2>Mes réalisations</h2>
+        </div>
+
+        <h3>Veuillez trouver quelques unes de mes réalisations effectuées pendant ma formation.<br>Les langages utilisés
+            sont le HTML, CSS, Bootstrap et JAVASCRIPT; le but étant de reproduire ou de modifier les différents
+            sites web fournis.</h3>
+
+        <section>
+            <input type="radio" name="position" checked />
+            <input type="radio" name="position" />
+            <input type="radio" name="position" />
+            <input type="radio" name="position" />
+            <input type="radio" name="position" />
+            <input type="radio" name="position" />
+            <input type="radio" name="position" />
+            <input type="radio" name="position" />
+
+            <main id="carousel">
+                <div class="item"><img src="assets/img/figure_geometrique.PNG" width="425px" height="450px"></div>
+                <div class="item"><img src="assets/img/dames.PNG" width="425px" height="450px"></div>
+                <div class="item"><img src="assets/img/marmiton.PNG" width="425px" height="450px"></div>
+                <div class="item"><img src="assets/img/windows.PNG" width="425px" height="450px"></div>
+                <div class="item"><img src="assets/img/competences.PNG" width="425px" height="450px"></div>
+                <div class="item"><img src="assets/img/startrek.PNG" width="425px" height="450px"></div>
+                <div class="item"><img src="assets/img/cassebrique.PNG" width="425px" height="450px"></div>
+                <div class="item"><img src="assets/img/ecosia.PNG" width="425px" height="450px"></div>
+                <main>
+        </section>
+
+    </div>
+
+    <div id="contact" class="container contact">
+
+        <div class="container">
+
+            <h1>Contactez-moi</h1>
+
+            <form method="post" action="https://formspree.io/f/xeqvopwa" id="frm">
+                <label for="fname">* Votre nom & prénom</label>
+                <input type="text" id="fname" name="Nom et prénom" placeholder="Votre nom et prénom" required="">
+
+                <label for="sujet">* L'objet de votre message</label>
+                <input type="text" id="sujet" name="Sujet" placeholder="L'objet de votre message" required="">
+
+                <label for="emailAddress">* Saisissez mon e-mail (voir mon CV)</label>
+                <input id="emailAddress" type="email" name="Email" placeholder="Saisissez mon e-mail" required="">
+
+                <label for="subject">* Votre message</label>
+                <textarea id="subject" name="Message" placeholder="Votre message" required="" style="height:200px"></textarea>
+
+                <p>* Champs obligatoires</p>
+                <input type="submit" value="Envoyer">
+                <button class="reset" type="button" onclick="resetForm();">Réinitialiser le formulaire</button>
+            </form>
+
+        </div>
+
+    </div>
+
+    <script type="text/javascript"></script>
+    <script src="menu.js"></script>
+    <script src="//code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="scroll.js"></script>
+    <script src="resetForm.js"></script>
+
+</body>
+
+</html>
