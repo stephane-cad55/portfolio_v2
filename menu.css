@@ -412,7 +412,7 @@ input:nth-of-type(8):checked~main#carousel {
 .tech {
   background-image: url("assets/img/menu.jpg");
   background-attachment: fixed;
-  height: 70vh;
+  height: 100vh;
 }
 
 .tech h2 {
@@ -424,13 +424,10 @@ input:nth-of-type(8):checked~main#carousel {
   padding-top: 40px;
 }
 
-.tech h3 {
-  color: rgb(255, 255, 255);
-  
-  
+.tech .position{
+  margin-top: 50px;
   display: flex;
   justify-content: center;
-  padding-top: 40px;
 }
 
 .tech a {
@@ -438,8 +435,79 @@ input:nth-of-type(8):checked~main#carousel {
   font-size: 20px;
   display: flex;
   justify-content: center;
-  padding-top: 40px;
   text-decoration: none;
+}
+
+/*Effets liens*/
+
+.tech .main-contain {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 180rem;
+  margin-top: 30px;
+}
+
+.tech button {
+  border: none;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.95);
+  cursor: pointer;
+}
+
+.tech .div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  text-align: center;
+  position: relative;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.tech .flex-1 {
+  flex: 1;
+  min-width: 250px;
+}
+
+.tech .button {
+  background: rgb(255, 255, 255);
+  text-align: center;
+  display: inline-block;
+  position: relative;
+  will-change: transform;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.tech .btn-1 {
+  letter-spacing: 0.05rem;
+  transition: 0.5s all ease-in-out;
+  position: relative;
+  background: transparent;
+}
+
+.tech .btn-1:before {
+  border-top: 0.3rem solid rgb(47, 20, 202);
+  border-bottom: 0.3rem solid rgb(47, 20, 202);
+  display: block;
+  position: absolute;
+  background: transparent;
+  content: "";
+  top: 6px;
+  bottom: 0;
+  left: 100%;
+  right: 100%;
+  transition: 0.48s all ease-in-out;
+}
+
+.tech .btn-1:hover {
+  letter-spacing: 0.4rem;
+}
+
+.tech .btn-1:hover:before {
+  left: 25%;
+  right: 25%;
 }
 
 /*Projets*****************************************************************************************************************************************/
