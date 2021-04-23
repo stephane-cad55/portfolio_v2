@@ -407,6 +407,41 @@ input:nth-of-type(8):checked~main#carousel {
   --position: 8;
 }
 
+/*Veilles technologiques*/
+
+.tech {
+  background-image: url("assets/img/menu.jpg");
+  background-attachment: fixed;
+  height: 70vh;
+}
+
+.tech h2 {
+  color: rgb(255, 255, 255);
+  font-size: 40px;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  padding-top: 40px;
+}
+
+.tech h3 {
+  color: rgb(255, 255, 255);
+  
+  
+  display: flex;
+  justify-content: center;
+  padding-top: 40px;
+}
+
+.tech a {
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  padding-top: 40px;
+  text-decoration: none;
+}
+
 /*Projets*****************************************************************************************************************************************/
 
 .projects {
