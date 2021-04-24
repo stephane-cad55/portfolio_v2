@@ -8,8 +8,11 @@
 
 body {
   scroll-behavior: smooth;
-  background-image: url("assets/img/dev.webp");
+  background-image: url("assets/img/menu.jpg");
+  background-attachment: fixed;
   /* overflow: hidden;*/
+  /* background-size: 100% 25%; 
+  background-repeat: no-repeat center cover; */
 }
 
 .menu {
@@ -17,7 +20,7 @@ body {
 }
 
 .menu h1 {
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   text-align: center;
   position: relative;
   animation-name: heading;
@@ -175,7 +178,7 @@ body {
 }
 
 .menu .sub-menu {
-  margin-top: 320px;
+  margin-top: 250px;
 }
 
 @keyframes heading {
@@ -207,8 +210,8 @@ body {
 /*A propos de moi*********************************************************************************************************************************/
 
 .me {
-  background-image: url("assets/img/menu.jpg");
-  background-attachment: fixed;
+  /* background-image: url("assets/img/menu.jpg"); */
+  /* background-attachment: fixed; */
   height: 100vh;
 }
 
@@ -227,7 +230,7 @@ body {
   display: flex;
   justify-content: center;
   text-align: center;
-  margin-top: 120px;
+  margin-top: 180px;
   margin-right: 150px;
   margin-left: 150px;
 }
@@ -237,11 +240,22 @@ body {
   color: rgb(255, 255, 255);
 }
 
+/*Effet scroll texte à propos de moi*/
+
+.me figure {
+  position: relative;
+  left: 60%;
+  margin: 0;
+  padding: 0;
+  opacity: 0;
+  transition: all 1.5s ease;
+}
+
 /*Réalisations************************************************************************************************************************************/
 
 .real {
-  background-image: url("assets/img/menu.jpg");
-  background-attachment: fixed;
+  /* background-image: url("assets/img/menu.jpg"); */
+  /* background-attachment: fixed; */
   height: 100vh;
 }
 
@@ -407,11 +421,11 @@ input:nth-of-type(8):checked~main#carousel {
   --position: 8;
 }
 
-/*Veilles technologiques*/
+/*Veilles technologiques**************************************************************************************************************************/
 
 .tech {
-  background-image: url("assets/img/menu.jpg");
-  background-attachment: fixed;
+  /* background-image: url("assets/img/menu.jpg"); */
+  /* background-attachment: fixed; */
   height: 100vh;
 }
 
@@ -424,8 +438,8 @@ input:nth-of-type(8):checked~main#carousel {
   padding-top: 40px;
 }
 
-.tech .position{
-  margin-top: 50px;
+.tech .position {
+  margin-top: 100px;
   display: flex;
   justify-content: center;
 }
@@ -445,7 +459,7 @@ input:nth-of-type(8):checked~main#carousel {
   flex-direction: column;
   justify-content: center;
   max-width: 180rem;
-  margin-top: 30px;
+  margin-top: 90px;
 }
 
 .tech button {
@@ -513,8 +527,8 @@ input:nth-of-type(8):checked~main#carousel {
 /*Projets*****************************************************************************************************************************************/
 
 .projects {
-  background-image: url("assets/img/menu.jpg");
-  background-attachment: fixed;
+  /* background-image: url("assets/img/menu.jpg"); */
+  /* background-attachment: fixed; */
   min-height: 100vh;
 }
 
@@ -530,17 +544,24 @@ input:nth-of-type(8):checked~main#carousel {
 .projects h3 {
   color: rgb(255, 255, 255);
   font-size: 20px;
-  margin-top: 10px;
+  margin-top: 30px;
   display: flex;
   justify-content: center;
   text-align: center;
   text-transform: uppercase;
 }
 
+.projects .border {
+  border: rgb(117, 120, 161) solid 3px;
+  height: 250px;
+  margin-left: 70px;
+  margin-right: 70px;
+}
+
 .projects p {
   color: rgb(255, 255, 255);
   font-size: 20px;
-  margin-top: 50px;
+  margin-top: 17px;
   display: flex;
   justify-content: center;
   text-align: center;
@@ -553,14 +574,14 @@ input:nth-of-type(8):checked~main#carousel {
 }
 
 .projects img {
-  margin-top: 30px;
+  margin-top: 45px;
 }
 
 /*Contact*****************************************************************************************************************************************/
 
 .contact {
-  background-image: url("assets/img/menu.jpg");
-  background-attachment: fixed;
+  /* background-image: url("assets/img/menu.jpg"); */
+  /* background-attachment: fixed; */
   height: 100vh;
   display: flex;
   justify-content: center;
