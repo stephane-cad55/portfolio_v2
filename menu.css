@@ -232,11 +232,13 @@ body {
   text-align: center;
   padding-bottom: 50px;
   font-family: fantasy;
+  text-shadow: 4px 3px 0px rgb(99, 77, 194), 9px 8px 0px rgba(0, 0, 0, 0.15);
 }
 
 .me p {
   color: white;
   text-align: center;
+  line-height: 50px;
   /* Set max and min font sizes */
   --max-font: 20;
   --min-font: 14;
@@ -304,6 +306,7 @@ body {
   text-transform: uppercase;
   text-align: center;
   font-family: fantasy;
+  text-shadow: 4px 3px 0px rgb(99, 77, 194), 9px 8px 0px rgba(0, 0, 0, 0.15);
 }
 
 .real h3 {
@@ -658,6 +661,7 @@ main {
   text-transform: uppercase;
   text-align: center;
   font-family: fantasy;
+  text-shadow: 4px 3px 0px rgb(99, 77, 194), 9px 8px 0px rgba(0, 0, 0, 0.15);
 }
 
 .tech p {
@@ -799,6 +803,7 @@ main {
   text-align: center;
   margin-top: 30px;
   font-family: fantasy;
+  text-shadow: 4px 3px 0px rgb(99, 77, 194), 9px 8px 0px rgba(0, 0, 0, 0.15);
 }
 
 .projects p {
@@ -1027,6 +1032,7 @@ main {
   text-transform: uppercase;
   text-align: center;
   font-family: fantasy;
+  text-shadow: 4px 3px 0px rgb(99, 77, 194), 9px 8px 0px rgba(0, 0, 0, 0.15);
 }
 
 @media (min-width: 1200px) {
