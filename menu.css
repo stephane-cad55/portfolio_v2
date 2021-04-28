@@ -236,7 +236,6 @@ body {
 
 .me p {
   color: white;
-  width: fit-content;
   text-align: center;
   /* Set max and min font sizes */
   --max-font: 20;
@@ -309,7 +308,6 @@ body {
 
 .real h3 {
   color: white;
-  width: fit-content;
   text-align: center;
   /* Set max and min font sizes */
   --max-font: 20;
