@@ -3,7 +3,7 @@
     var posImg = fig.offsetTop;
     function effet() {
         var posCurseur = this.pageYOffset;
-        if (posImg - posCurseur < 800) {
+        if (posImg - posCurseur < 750) {
             fig.style.left = 0;
             fig.style.opacity = 1;
         } else {
