@@ -1,54 +1,34 @@
-function moveToSelected(element) {
+$(function () {
 
-    if (element == "next") {
-        var selected = $(".selected").next();
-    } else if (element == "prev") {
-        var selected = $(".selected").prev();
-    } else {
-        var selected = element;
-    }
+    $('#thumbnail li').click(function () {
+        var thisIndex = $(this).index()
 
-    var next = $(selected).next();
-    var prev = $(selected).prev();
-    var prevSecond = $(prev).prev();
-    var nextSecond = $(next).next();
+        if (thisIndex < $('#thumbnail li.active').index()) {
+            prevImage(thisIndex, $(this).parents("#thumbnail").prev("#image-slider"));
+        } else if (thisIndex > $('#thumbnail li.active').index()) {
+            nextImage(thisIndex, $(this).parents("#thumbnail").prev("#image-slider"));
+        }
 
-    $(selected).removeClass().addClass("selected");
+        $('#thumbnail li.active').removeClass('active');
+        $(this).addClass('active');
 
-    $(prev).removeClass().addClass("prev");
-    $(next).removeClass().addClass("next");
+    });
+});
 
-    $(nextSecond).removeClass().addClass("nextRightSecond");
-    $(prevSecond).removeClass().addClass("prevLeftSecond");
+var width = $('#image-slider').width();
 
-    $(nextSecond).nextAll().removeClass().addClass('hideRight');
-    $(prevSecond).prevAll().removeClass().addClass('hideLeft');
-
+function nextImage(newIndex, parent) {
+    parent.find('li').eq(newIndex).addClass('next-img').css('left', width).animate({ left: 0 }, 600);
+    parent.find('li.active-img').removeClass('active-img').css('left', '0').animate({ left: -width }, 600);
+    parent.find('li.next-img').attr('class', 'active-img');
+}
+function prevImage(newIndex, parent) {
+    parent.find('li').eq(newIndex).addClass('next-img').css('left', -width).animate({ left: 0 }, 600);
+    parent.find('li.active-img').removeClass('active-img').css('left', '0').animate({ left: width }, 600);
+    parent.find('li.next-img').attr('class', 'active-img');
 }
 
-$(document).keydown(function (e) {
-    switch (e.which) {
-        case 37: // left
-            moveToSelected('prev');
-            break;
+/* Thumbails */
+var ThumbailsWidth = ($('#image-slider').width() - 18.5) / 7;
+$('#thumbnail li').find('img').css('width', ThumbailsWidth);
 
-        case 39: // right
-            moveToSelected('next');
-            break;
-
-        default: return;
-    }
-    e.preventDefault();
-});
-
-$('#carousel div').click(function () {
-    moveToSelected($(this));
-});
-
-$('#prev').click(function () {
-    moveToSelected('prev');
-});
-
-$('#next').click(function () {
-    moveToSelected('next');
-});
