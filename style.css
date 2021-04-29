@@ -328,7 +328,7 @@ h1 {
 }
 
 .home .contain h1 {
-  font-size: 3.8rem;
+  font-size: 3.2rem;
   margin-top: 150px;
   white-space: nowrap;
 }
@@ -414,12 +414,12 @@ h1 {
 }
 
 .home .contain h2 {
-  font-size: 2.3rem;
+  font-size: 2.2rem;
   margin-top: 40px;
 }
 
 .home .link {
-  font-size: 15rem;
+  font-size: 10rem;
 }
 
 .home .btn {
