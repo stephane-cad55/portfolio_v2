@@ -11,7 +11,6 @@ html {
 }
 
 body {
-  /* background-color: #1a093f; */
   background-image: url("assets/img/fond_ecran.jpg");
   position: relative;
   height: 100%;
@@ -329,8 +328,9 @@ h1 {
 }
 
 .home .contain h1 {
-  font-size: 3.4rem;
+  font-size: 3.8rem;
   margin-top: 150px;
+  white-space: nowrap;
 }
 
 .home h1 {
