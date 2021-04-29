@@ -267,8 +267,7 @@ h1 {
   display: inline-block;
   position: relative;
   transform-style: preserve-3d;
-  perspective: 00;
-  -webkit-font-smoothing: antialiased;
+  perspective: 1;
 }
 
 .home h1 span::before, .home h1 span::after {
