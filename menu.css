@@ -344,7 +344,57 @@ body {
 
 /*Carousel réalisations*/
 
-ul {
+.real {
+  overflow: hidden;
+  perspective-origin: 0% 0%;
+  perspective: 200vw;
+}
+
+.real img {
+  height: 75%;
+  transform: translate(-100vw);
+  border-radius: 5px;
+}
+
+#carousel {
+  position: absolute;
+  display: inline-block;
+  top: 20vh;
+  left: -120vw;
+  width: 400vw;
+  height: 50vh;
+  transform: translateZ(5vw) rotateX(10deg) rotateY(25deg) rotateZ(-10deg);
+}
+
+#carousel2 {
+  position: absolute;
+  top: 50vh;
+  left: -100vw;
+  width: 300vw;
+  height: 50vh;
+  transform: translateZ(-5vw) rotateZ(-60deg) rotateY(-40deg);
+}
+
+#movement {
+  width: 100%;
+  height: 100%;
+  animation: moveRight 90s infinite linear;
+  transition: all 4s linear 0s;
+}
+
+@keyframes moveRight {
+  0% {
+    transform: translate(0);
+  }
+  50% {
+    transform: translate(200vw);
+  }
+  100% {
+    transform: translate(300vw);
+  }
+}
+
+/* ul {
   padding: 0;
   margin: 0;
 }
@@ -384,7 +434,7 @@ ul {
 
 #image-slider ul li img {
   width: 100%;
-  height: auto;
+  height: 100%;
 }
 
 #image-slider ul li.active-img {
@@ -426,7 +476,7 @@ ul {
 #thumbnail li:first-child img {
   margin-right: 0px;
   margin-left: 0px;
-}
+} */
 
 /*Veilles technologiques**************************************************************************************************************************/
 
