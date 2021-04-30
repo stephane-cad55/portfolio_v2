@@ -13,6 +13,7 @@ body {
   position: relative;
   height: 100%;
   margin: 0px;
+  overflow-y: hidden;
 }
 
 .home {
@@ -62,7 +63,7 @@ body {
   margin-left: -100px;
   height: 150px;
   width: 200px;
-  margin-top: 210px;
+  margin-top: 180px;
 }
 
 .gearbox {
@@ -233,6 +234,10 @@ h1 {
 
 #load {
   display: none;
+}
+
+.home {
+  overflow-y: hidden;
 }
 
 .home .contain {

@@ -11,7 +11,7 @@ body {
   background-image: url("assets/img/fond_ecran.jpg");
   background-attachment: fixed;
   background-position: center;
-  /* overflow: hidden; */
+  overflow-x: hidden;
 }
 
 .menu {
