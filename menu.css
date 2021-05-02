@@ -28,6 +28,7 @@ body {
   animation-fill-mode: forwards;
   margin-top: 75px;
   font-size: 50px;
+  font-family: BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .menu .sub-heading {
@@ -219,7 +220,7 @@ body {
   min-height: 100vh;
   display: flex;
   align-items: center;
-  margin-top: 20px;
+  margin-top: 60px;
 }
 
 .me h2 {
@@ -232,18 +233,38 @@ body {
   text-transform: uppercase;
   text-align: center;
   padding-bottom: 50px;
-  font-family: fantasy;
-  text-shadow: 4px 3px 0px rgb(99, 77, 194), 9px 8px 0px rgba(0, 0, 0, 0.15);
+  font-family: BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  text-shadow: 4px 3px 0px grey, 9px 8px 0px rgba(0, 0, 0, 0.15);
+}
+
+.me .hr {
+  /* centre verticalement les enfants entre eux */
+  align-items: center;
+  /* active flexbox */
+  display: flex;
+  /* garde le texte centré s’il passe sur plusieurs lignes ou si flexbox n’est pas supporté */
+  text-align: center;
+}
+
+.me .hr::before, .me .hr::after {
+  border-top: .0625em solid blue;
+  /* nécessaire pour afficher les pseudo-éléments */
+  content: "";
+  /* partage le reste de la largeur disponible */
+  flex: 1;
+  /* espace les traits du texte */
+  margin: 0.5em;
 }
 
 .me p {
   color: white;
   text-align: center;
-  line-height: 40px;
+  line-height: 30px;
   /* Set max and min font sizes */
   --max-font: 20;
   --min-font: 14;
   font-size: var(--responsive);
+  margin-top: 20px;
 }
 
 @media (min-width: 1200px) {
@@ -282,7 +303,7 @@ body {
   margin: 0;
   padding: 0;
   opacity: 0;
-  transition: all 1.5s ease;
+  transition: all 2s ease;
 }
 
 /*Réalisations************************************************************************************************************************************/
@@ -306,9 +327,29 @@ body {
   margin: .3em 0;
   text-transform: uppercase;
   text-align: center;
-  font-family: fantasy;
-  text-shadow: 4px 3px 0px rgb(99, 77, 194), 9px 8px 0px rgba(0, 0, 0, 0.15);
+  font-family: BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  text-shadow: 4px 3px 0px grey, 9px 8px 0px rgba(0, 0, 0, 0.15);
 }
+
+.real .hr {
+  /* centre verticalement les enfants entre eux */
+  align-items: center;
+  /* active flexbox */
+  display: flex;
+  /* garde le texte centré s’il passe sur plusieurs lignes ou si flexbox n’est pas supporté */
+  text-align: center;
+}
+
+.real .hr::before, .real .hr::after {
+  border-top: .0625em solid blue;
+  /* nécessaire pour afficher les pseudo-éléments */
+  content: "";
+  /* partage le reste de la largeur disponible */
+  flex: 1;
+  /* espace les traits du texte */
+  margin: 0.5em;
+}
+
 
 .real h3 {
   color: white;
@@ -423,8 +464,8 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 100%;
-  height: 100%;
+  width: 90%;
+  height: 90%;
   overflow: hidden;
   margin: 0;
   padding: 0;
@@ -450,23 +491,19 @@ body {
   filter: saturate(25%);
 }
 
-.hero figure:not(.on):hover {
-  cursor: pointer;
-}
-
 .hero figure img {
-  width: 100%;
+  width: 80%;
   height: 100%;
-  -o-object-fit: cover;
-  object-fit: cover;
+  /* -o-object-fit: cover;
+  object-fit: cover; */
 }
 
 .hero figure.on {
   -ms-flex-preferred-size: 100%;
   flex-basis: 100%;
-  -webkit-transition: 0.8s linear;
-  -o-transition: 0.8s linear;
-  transition: 0.8s linear;
+  -webkit-transition: 1s linear;
+  -o-transition: 1s linear;
+  transition: 1s linear;
   z-index: 20;
   -webkit-filter: saturate(100%);
   filter: saturate(100%);
@@ -491,7 +528,7 @@ body {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-animation: infoIn 1.2s;
+  -webkit-animation: infoIn 2s;
   animation: infoIn 2s;
 }
 
@@ -516,6 +553,7 @@ body {
   }
 }
 
+*/
 /* ul {
   padding: 0;
   margin: 0;
@@ -620,9 +658,28 @@ body {
   margin: .3em 0;
   text-transform: uppercase;
   text-align: center;
-  font-family: fantasy;
-  text-shadow: 4px 3px 0px rgb(99, 77, 194), 9px 8px 0px rgba(0, 0, 0, 0.15);
+  font-family: BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  text-shadow: 4px 3px 0px grey, 9px 8px 0px rgba(0, 0, 0, 0.15);
   margin-top: 80px;
+}
+
+.tech .hr {
+  /* centre verticalement les enfants entre eux */
+  align-items: center;
+  /* active flexbox */
+  display: flex;
+  /* garde le texte centré s’il passe sur plusieurs lignes ou si flexbox n’est pas supporté */
+  text-align: center;
+}
+
+.tech .hr::before, .tech .hr::after {
+  border-top: .0625em solid blue;
+  /* nécessaire pour afficher les pseudo-éléments */
+  content: "";
+  /* partage le reste de la largeur disponible */
+  flex: 1;
+  /* espace les traits du texte */
+  margin: 0.5em;
 }
 
 .tech p {
@@ -762,9 +819,27 @@ body {
   margin: .3em 0;
   text-transform: uppercase;
   text-align: center;
-  margin-top: 30px;
-  font-family: fantasy;
-  text-shadow: 4px 3px 0px rgb(99, 77, 194), 9px 8px 0px rgba(0, 0, 0, 0.15);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  text-shadow: 4px 3px 0px grey, 9px 8px 0px rgba(0, 0, 0, 0.15);
+}
+
+.projects .hr {
+  /* centre verticalement les enfants entre eux */
+  align-items: center;
+  /* active flexbox */
+  display: flex;
+  /* garde le texte centré s’il passe sur plusieurs lignes ou si flexbox n’est pas supporté */
+  text-align: center;
+}
+
+.projects .hr::before, .projects .hr::after {
+  border-top: .0625em solid blue;
+  /* nécessaire pour afficher les pseudo-éléments */
+  content: "";
+  /* partage le reste de la largeur disponible */
+  flex: 1;
+  /* espace les traits du texte */
+  margin: 0.5em;
 }
 
 .projects p {
@@ -814,7 +889,6 @@ body {
   padding: 1rem;
   width: 95%;
   margin: 0 auto;
-  margin-top: 130px;
 }
 
 @media (min-width: 600px) {
@@ -849,14 +923,18 @@ body {
   }
 }
 
+.projects p.title {
+  margin-top: 100px;
+}
+
+.projects p.text {
+  font-size: 16px;
+  text-transform: none;
+}
+
 .projects .size {
   text-transform: uppercase;
   font-size: 22px;
-}
-
-.projects .text {
-  font-size: 16px;
-  text-transform: none;
 }
 
 .projects .link {
@@ -1001,8 +1079,27 @@ body {
   font-size: var(--responsive);
   text-transform: uppercase;
   text-align: center;
-  font-family: fantasy;
-  text-shadow: 4px 3px 0px rgb(99, 77, 194), 9px 8px 0px rgba(0, 0, 0, 0.15);
+  font-family: BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  text-shadow: 4px 3px 0px grey, 9px 8px 0px rgba(0, 0, 0, 0.15);
+}
+
+.contact .hr {
+  /* centre verticalement les enfants entre eux */
+  align-items: center;
+  /* active flexbox */
+  display: flex;
+  /* garde le texte centré s’il passe sur plusieurs lignes ou si flexbox n’est pas supporté */
+  text-align: center;
+}
+
+.contact .hr::before, .contact .hr::after {
+  border-top: .0625em solid blue;
+  /* nécessaire pour afficher les pseudo-éléments */
+  content: "";
+  /* partage le reste de la largeur disponible */
+  flex: 1;
+  /* espace les traits du texte */
+  margin: 0.5em;
 }
 
 @media (min-width: 1200px) {
